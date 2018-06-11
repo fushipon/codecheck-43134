@@ -10,6 +10,6 @@ public class App {
 				return "idiot";
 			}
 		}
-		return null;
+		return "idiot";
 		}
 }

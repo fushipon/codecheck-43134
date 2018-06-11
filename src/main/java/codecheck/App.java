@@ -5,12 +5,20 @@ public class App {
 		for (int i = 0, l = args.length; i < l; i++) {
 			String output = String.format("argv[%s]: %s", i, args[i]);
 			System.out.println(output);
-			int thousand = 1000;
-			int input = Integer.parseUnsignedInt(output);
-			int result = input / '3';
-			if(result < thousand) {
-				String idiot = "idiot";
+			int a = Integer.parseInt(output);
+			String idiot = calc(a);
 			}
+
 		}
+
+	private static String calc(int a) {
+		String idiot = "idiot";
+		String invalid = "invalid";
+		int thousand = 1000;
+		int result = a / '3';
+		if(result <= thousand) {
+			return idiot;
 	}
+		return invalid;
+}
 }

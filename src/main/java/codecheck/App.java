@@ -6,8 +6,7 @@ public class App {
 			String output = String.format("argv[%s]: %s", i, args[i]);
 			System.out.println(output);
 			int a = Integer.parseInt(output);
-			int b = a % 3;
-			if(b == 0) {
+			if(a % 3 == 0) {
 			System.out.println("idiot");
 			}
 		}

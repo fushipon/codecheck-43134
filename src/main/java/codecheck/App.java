@@ -7,6 +7,9 @@ public class App {
 			if(a % 3 == 0) {
 			System.out.println("idiot");
 			}
+			if(args[i].contains("3")) {
+				System.out.println("stupid");
+			}
 		}
 	}
 }
